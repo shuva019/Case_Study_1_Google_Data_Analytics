@@ -6,18 +6,18 @@ library(skimr)
 
 #loading the data sets from October'2022 to September'2023,
 #read_csv() for turning the data sets into tibble
-oct_2022 <- read_csv("C:/Users/11235/OneDrive/Documents/R Scripts/Case_Study_1_Cyclistic_Bike_Trip_Data/Cyclistic_Trip_Data/202210-divvy-tripdata.csv") 
-nov_2022 <- read_csv("C:/Users/11235/OneDrive/Documents/R Scripts/Case_Study_1_Cyclistic_Bike_Trip_Data/Cyclistic_Trip_Data/202211-divvy-tripdata.csv")
-dec_2022 <- read_csv("C:/Users/11235/OneDrive/Documents/R Scripts/Case_Study_1_Cyclistic_Bike_Trip_Data/Cyclistic_Trip_Data/202212-divvy-tripdata.csv")
-jan_2023 <- read_csv("C:/Users/11235/OneDrive/Documents/R Scripts/Case_Study_1_Cyclistic_Bike_Trip_Data/Cyclistic_Trip_Data/202301-divvy-tripdata.csv")
-feb_2023 <- read_csv("C:/Users/11235/OneDrive/Documents/R Scripts/Case_Study_1_Cyclistic_Bike_Trip_Data/Cyclistic_Trip_Data/202302-divvy-tripdata.csv")
-mar_2023 <- read_csv("C:/Users/11235/OneDrive/Documents/R Scripts/Case_Study_1_Cyclistic_Bike_Trip_Data/Cyclistic_Trip_Data/202303-divvy-tripdata.csv")
-apr_2023 <- read_csv("C:/Users/11235/OneDrive/Documents/R Scripts/Case_Study_1_Cyclistic_Bike_Trip_Data/Cyclistic_Trip_Data/202304-divvy-tripdata.csv")
-may_2023 <- read_csv("C:/Users/11235/OneDrive/Documents/R Scripts/Case_Study_1_Cyclistic_Bike_Trip_Data/Cyclistic_Trip_Data/202305-divvy-tripdata.csv")
-jun_2023 <- read_csv("C:/Users/11235/OneDrive/Documents/R Scripts/Case_Study_1_Cyclistic_Bike_Trip_Data/Cyclistic_Trip_Data/202306-divvy-tripdata.csv")
-jul_2023 <- read_csv("C:/Users/11235/OneDrive/Documents/R Scripts/Case_Study_1_Cyclistic_Bike_Trip_Data/Cyclistic_Trip_Data/202307-divvy-tripdata.csv")
-aug_2023 <- read_csv("C:/Users/11235/OneDrive/Documents/R Scripts/Case_Study_1_Cyclistic_Bike_Trip_Data/Cyclistic_Trip_Data/202308-divvy-tripdata.csv")
-sep_2023 <- read_csv("C:/Users/11235/OneDrive/Documents/R Scripts/Case_Study_1_Cyclistic_Bike_Trip_Data/Cyclistic_Trip_Data/202309-divvy-tripdata.csv")
+oct_2022 <- read_csv("202210-divvy-tripdata.csv") 
+nov_2022 <- read_csv("202211-divvy-tripdata.csv")
+dec_2022 <- read_csv("202212-divvy-tripdata.csv")
+jan_2023 <- read_csv("202301-divvy-tripdata.csv")
+feb_2023 <- read_csv("202302-divvy-tripdata.csv")
+mar_2023 <- read_csv("202303-divvy-tripdata.csv")
+apr_2023 <- read_csv("202304-divvy-tripdata.csv")
+may_2023 <- read_csv("202305-divvy-tripdata.csv")
+jun_2023 <- read_csv("202306-divvy-tripdata.csv")
+jul_2023 <- read_csv("202307-divvy-tripdata.csv")
+aug_2023 <- read_csv("202308-divvy-tripdata.csv")
+sep_2023 <- read_csv("202309-divvy-tripdata.csv")
 
 #to compare if the data sets have similar number of variables, if it returns 0 you are good to go
 compare_df_cols(oct_2022, nov_2022, dec_2022, jan_2023, feb_2023, mar_2023,
@@ -262,12 +262,12 @@ viz_10_end_station_casual <- combined_bike_trip %>%
   labs(title = "Top 10 popular end stations among casual riders", x = "End Station", y = "No. of Rides")
 
 #Exporting analyzed data into csv files for further visualizations
-write_csv(bike_trip_combined, "C:/Users/11235/OneDrive/Documents/R Scripts/Bike_Trip_Oct22_Sep23.csv")
+write_csv(bike_trip_combined, "Bike_Trip_Oct22_Sep23.csv")
 
-write_csv(locations, "C:/Users/11235/OneDrive/Documents/R Scripts/Locations_Bike_Trip.csv")
+write_csv(locations, "Locations_Bike_Trip.csv")
 
-write_csv(popular_route, "C:/Users/11235/OneDrive/Documents/R Scripts/Popular_Routes.csv")
+write_csv(popular_route, "Popular_Routes.csv")
 
-write_csv(top_route_rider, "C:/Users/11235/OneDrive/Documents/R Scripts/Top_Routes_Riderwise.csv")
+write_csv(top_route_rider, "Top_Routes_Riderwise.csv")
 
-write_csv(combined_bike_trip1, "C:/Users/11235/OneDrive/Documents/R Scripts/Bike_Trip_with_Routes.csv")
+write_csv(combined_bike_trip1, "Bike_Trip_with_Routes.csv")
