@@ -262,7 +262,9 @@ viz_10_end_station_casual <- combined_bike_trip %>%
   labs(title = "Top 10 popular end stations among casual riders", x = "End Station", y = "No. of Rides")
 
 #Exporting analyzed data into csv files for further visualizations
-write_csv(bike_trip_combined, "Bike_Trip_Oct22_Sep23.csv")
+write_csv(bike_trip_combined, "Bike_Trip_Oct22_Sep23_Raw.csv")
+
+write_csv(combined_bike_trip, "Combined_Bike_Trips.csv")
 
 write_csv(locations, "Locations_Bike_Trip.csv")
 
