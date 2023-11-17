@@ -2,7 +2,7 @@
 I started the Google Data Analytics Professional Certification course from Coursera. In the last segment there was a capstone project which included two distinct case studies. 
 It is the 1st case study which involves the analysis of a bike share trip data from Cyclistic. I used the public dataset from divvybikes. The data can be found here - https://divvy-tripdata.s3.amazonaws.com/index.html
 Data license can be found here - https://divvybikes.com/data-license-agreement
-For this case study I used the bike trip data from October'2022 to September'2023. All the data is available in kaggle.
+For this case study I used the bike trip data from October'2022 to September'2023.
 I would also like to thank Abdullah Temidayo, since during my completion of this case study I took help from the article of this guy. He did a wonderful job. His article is available in Medium.
 The article link is - https://medium.com/@abdullahodunmbaku/cyclistic-bikeshare-case-study-a2ac357b766
 I used R programming language during the analysis phase due to its robust features. 
